@@ -1,4 +1,4 @@
-Sample Project for FB18178597
+# Sample Project for FB18178597
 
 This project demonstrates an (effectively) fatal error in SwiftUI in macOS 26.0 Beta (25A5279m) when a `Settings` view containing a `TabView` with `.animation()` on the selected tab binding also contains a `.confirmationDialog()`
 
