@@ -35,9 +35,9 @@ struct SettingsView : View {
         }
         // BUG EXPLANATION
         //
-        // The existence of this .confirmationDialog() modifier causes a
-        // fatal error when chaging tabs in the TabView if the .animation()
-        // modifier is applied to $selectedTab above.
+        // The existence of this .confirmationDialog() modifier causes an
+        // (effectively) fatal error when changing tabs in the TabView if
+        // the .animation() modifier is applied to $selectedTab above.
         .confirmationDialog("Confirm?", isPresented: $showingConfirmation) {
             Button("Confirm") { }
             Button("Cancel", role: .cancel) { }
